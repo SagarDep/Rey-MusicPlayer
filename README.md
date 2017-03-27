@@ -27,8 +27,8 @@ The awesome Music Player includes a lot of features some of them are mentioned b
 - Seven band equalizer.
 
 
-<b>Screenshots</b>
-
+<H1>Screenshots</H1>
+******************************
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screenshotsmain.jpg?raw=true "Optional Title")
 
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen1.jpg?raw=true "Optional Title")
@@ -43,7 +43,25 @@ The awesome Music Player includes a lot of features some of them are mentioned b
 
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen6.jpg?raw=true "Optional Title")
 
+<H1>Developed By</H1>
+******************************
+Reyansh mishra - reyanshmishra@outlook.com
+
+<H1>Credits</H1>
+******************************
+Jams:-https://github.com/psaravan/JamsMusicPlayer
+RangeSlider:-https://github.com/channguyen/range-slider-view
+YoYo Animations-https://github.com/daimajia/AndroidViewAnimations
+VerticalSeekbar:-https://github.com/h6ah4i/android-verticalseekbar
+SeekArc:-https://github.com/neild001/SeekArc
+and other android libraries and android support libraries.
 
 
 
+<H1>License</H1>
+
+(c) 2015 Reyansh Mishra
+This is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this app. If not, see https://www.gnu.org/licenses/.
 
