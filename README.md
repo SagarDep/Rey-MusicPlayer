@@ -4,7 +4,6 @@
 
 ******************************
 <H1>APP FEATURES</H1>
-******************************
 
 The awesome Music Player includes a lot of features some of them are mentioned below.
 
@@ -46,11 +45,9 @@ The awesome Music Player includes a lot of features some of them are mentioned b
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen6.png?raw=true "Optional Title")
 
 <H1>Developed By</H1>
-******************************
 Reyansh mishra - reyanshmishra@outlook.com
 
 <H1>Credits</H1>
-******************************
 Jams:-https://github.com/psaravan/JamsMusicPlayer<br>
 RangeSlider:-https://github.com/channguyen/range-slider-view<br>
 YoYo Animations-https://github.com/daimajia/AndroidViewAnimations<br>
