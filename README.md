@@ -3,7 +3,7 @@
 
 
 ******************************
-APP FEATURES
+<H1>APP FEATURES</H1>
 ******************************
 
 The awesome Music Player includes a lot of features some of them are mentioned below.
@@ -29,6 +29,8 @@ The awesome Music Player includes a lot of features some of them are mentioned b
 
 <H1>Screenshots</H1>
 ******************************
+<br>
+
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screenshotsmain.jpg?raw=true "Optional Title")
 
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen1.jpg?raw=true "Optional Title")
