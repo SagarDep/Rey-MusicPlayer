@@ -31,8 +31,6 @@ The awesome Music Player includes a lot of features some of them are mentioned b
 
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen2.jpg?raw=true "Optional Title")
 
-![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen3.jpg?raw=true "Optional Title")
-
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen4.jpg?raw=true "Optional Title")
 
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screen5.jpg?raw=true "Optional Title")
