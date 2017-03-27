@@ -49,11 +49,11 @@ Reyansh mishra - reyanshmishra@outlook.com
 
 <H1>Credits</H1>
 ******************************
-Jams:-https://github.com/psaravan/JamsMusicPlayer
-RangeSlider:-https://github.com/channguyen/range-slider-view
-YoYo Animations-https://github.com/daimajia/AndroidViewAnimations
-VerticalSeekbar:-https://github.com/h6ah4i/android-verticalseekbar
-SeekArc:-https://github.com/neild001/SeekArc
+Jams:-https://github.com/psaravan/JamsMusicPlayer<br>
+RangeSlider:-https://github.com/channguyen/range-slider-view<br>
+YoYo Animations-https://github.com/daimajia/AndroidViewAnimations<br>
+VerticalSeekbar:-https://github.com/h6ah4i/android-verticalseekbar<br>
+SeekArc:-https://github.com/neild001/SeekArc<br>
 and other android libraries and android support libraries.
 
 
