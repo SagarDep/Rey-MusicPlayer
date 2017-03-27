@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/okok"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+            android:id="@+id/gridViewTitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="22dp"
+            android:singleLine="true"
+            android:text="Album name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium" />
+        <!--
+                <TextView
+                    android:id="@+id/bottomrow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:singleLine="true"
+                    android:text="Artist Name"
+                    android:textColor="#FFFFFF" />-->
+    </LinearLayout>
+
+
+</LinearLayout>
+

@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/circle"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+        android:id="@+id/text_view_toast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="16sp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="This is just check"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainbg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:paddingBottom="6dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="6dp">
+
+    <ImageView
+        android:id="@+id/dragger"
+        android:layout_width="35dp"
+        android:layout_height="25dp"
+        android:background="@drawable/drag_tran"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+     <com.reyansh.audio.audioplayer.free.Views.CircleImageView
+        android:id="@+id/image_view_album_art"
+        android:layout_width="60dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/dragger"
+        android:padding="1dp"
+        app:civ_border_color="@color/transparent_bg"
+        app:civ_border_width="2dp" />
+
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:id="@+id/linearLayout"
+        android:layout_toLeftOf="@+id/visualizer"
+
+        android:gravity="center"
+        android:foregroundGravity="center"
+        android:layout_toRightOf="@+id/image_view_album_art"
+        android:layout_toEndOf="@+id/image_view_album_art">
+
+        <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+            android:id="@+id/queue_song_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="asdf"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white" />
+
+        <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+            android:id="@+id/song_artist"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingTop="3dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <com.reyansh.audio.audioplayer.free.Views.MusicVisualizer
+        android:id="@+id/visualizer"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+         />
+</RelativeLayout>

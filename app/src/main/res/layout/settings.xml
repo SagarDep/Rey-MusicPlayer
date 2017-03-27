@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer_1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_bg"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/background_toolbar_translucent"
+                android:elevation="5dp"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/settings"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_x_large" />
+            </android.support.v7.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/gray_light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:fillViewport="true"
+                    android:paddingBottom="60dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="15dp"
+                        android:weightSum="7">
+
+
+                        <LinearLayout
+                            android:id="@+id/shakeit"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/SHAKE"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/shaketogotonextsong"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/shakeitcheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/white"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/changefont"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/font_setting"
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/changefont"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+
+                        <LinearLayout
+                            android:id="@+id/stripview"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/stripsview"
+                                    android:textAppearance="?android:textAppearanceMedium"
+                                    android:textColor="@color/white" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/strips"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/checkstripview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/white"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/fullwindow"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/fulscreen"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/fulscreendesc"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/fullwindowcheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/white"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/scrollview"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/ViewpagerTransformer"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/scrollEffect"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/artworkl"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/artwork"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/putblurredlocksreen"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/artwork"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/white"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/changebg"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/changebg"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/putyourbg"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/changebgcheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/white"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/pauseondisconnect"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/pause_on_disconnect"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:maxLines="2"
+                                    android:text="@string/pause_desc"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/pauseondisconnectcheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/white"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/playondisconnect"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/resume_on_disconnect"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="left"
+                                    android:gravity="left"
+                                    android:maxLines="2"
+                                    android:text="@string/play_desc"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_micro" />
+                            </LinearLayout>
+
+                            <CheckBox
+                                android:id="@+id/playondisconnectcheck"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/white"
+                                android:checked="false" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+
+                        <LinearLayout
+                            android:id="@+id/about"
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/settingselector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/about"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/text_size_medium" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:background="@color/gray_light" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:dslv="http://schemas.android.com/tools"
+    android:id="@+id/playlistbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/transparent_bg"
+        android:layout_weight="2"
+
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/image_btn_previous"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="25dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/previous" />
+
+         <com.reyansh.audio.audioplayer.free.Views.CircleImageView
+            android:id="@+id/image_view_album_art"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:civ_border_color="@color/transparent_bg"
+            app:civ_border_width="5dp"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/image_btn_nxt"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@color/transparent_bg">
+
+        <com.mobeta.android.dslv.DragSortListView
+            android:id="@+id/dragsortlistview"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:drawSelectorOnTop="true"
+            android:fastScrollEnabled="true"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            app:remove_enabled="true"
+            app:remove_mode="flingRemove"
+            dslv:collapsed_height="2dp"
+            dslv:drag_enabled="true"
+            dslv:drag_handle_id="@drawable/drag_handle"
+            dslv:drag_scroll_start="0.33"
+            dslv:drag_start_mode="onMove"
+            dslv:float_alpha="10"
+            dslv:max_drag_scroll_speed="15"
+            dslv:remove_enabled="true"
+            dslv:remove_mode="flingRemove"
+            dslv:slide_shuffle_speed="30"
+            dslv:sort_enabled="true"
+            dslv:track_drag_sort="true"
+            dslv:use_default_controller="true"></com.mobeta.android.dslv.DragSortListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/drawable_dialog_bg"
+    android:padding="4dp">
+
+    <LinearLayout
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable_dialog_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="375dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:text="@string/scrollview"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/defaulttrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/accordiontrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/rotatedowntrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/rotateuptrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/scaleinouttrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/stacktrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/tablettrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:id="@+id/f8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/settingselector"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/zommouttrans"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

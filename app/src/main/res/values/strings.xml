@@ -1,0 +1,304 @@
+<resources xmlns:xliff="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Muzik Player</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_now_playing">Now_playing</string>
+    <string name="title_activity_album_tracks__activity">AlbumTracks_Activity</string>
+    <string name="username">UserName</string>
+    <string name="password">Password</string>
+    <string name="AddToPlaylist">Add To Playlist?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact based on your message history</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="pref_sync_frequency">Change Font</string>
+    <string name="pref_sync_frequency_summary">Change the font of the app</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+
+    <string name="pref_user_profile">User Profile</string>
+    <string name="font_setting">FONT</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="Typeface_JosefinSans">fonts/Roboto-Thin.ttf</string>
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>OrmontLight</item>
+        <item>DecemberReaper</item>
+        <item>BirdmanLight</item>
+    </string-array>
+    <string-array name="syncFrequency">
+        <item name="DecemberReaper">December Reaper</item>
+        <item name="AlightyNesia">Alighty Nesia</item>
+        <item name="RobotoLight">Roboto Light</item>
+        <item name="JosefinSans">JosefinSans</item>
+    </string-array>
+    <string-array name="transformerstyle">
+        <item name="DefaultTransformer">Default Transformer</item>
+        <item name="AccordionTransformer">Accordion Transformer</item>
+        <item name="RotateDownTransformer">Rotate Down Transformer</item>
+        <item name="RotateUpTransformer">Rotate Up Transformer</item>
+        <item name="ScaleInOutTransformer">Scale In Out Transformer</item>
+        <item name="StackTransformer">Stack Transformer</item>
+        <item name="TabletTransformer">Tablet Transformer</item>
+        <item name="ZoomOutSlideTransformer">Zoom Out Slide Transformer</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+
+    <string-array name="pageTitle">
+        <item>ALBUMS</item>
+        <item>ARTISTS</item>
+        <item>SONGS</item>
+        <item>GENRES</item>
+        <item>PLAYLISTS</item>
+        <item>DIRECTORY</item>
+    </string-array>
+
+    <string-array name="presetarray">
+        <item>None</item>
+        <item>Large Hall</item>
+        <item>Large Room</item>
+        <item>Medium Hall</item>
+        <item>Medium Room</item>
+        <item>Small Room</item>
+        <item>Plate</item>
+        <item>Normal</item>
+        <item>Classical</item>
+        <item>Dance</item>
+        <item>Flat</item>
+        <item>Folk</item>
+        <item>Heavy Metal</item>
+        <item>Hip Hop</item>
+        <item>Jazz</item>
+        <item>Pop</item>
+        <item>Rock</item>
+    </string-array>
+
+
+    <string name="pref_header_notifications">Notifications</string>
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+    <string name="delete_item">Delete</string>
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="create_playlist_create_text">SAVE</string>
+    <plurals name="NNNtrackstoplaylist">
+        <item quantity="one">1 song added to playlist.</item>
+        <item quantity="other"><xliff:g example="27" id="number">%d</xliff:g> songs added to playlist.</item>
+    </plurals>
+    <string name="new_playlist_name_template">New</string>
+    <string name="create_playlist_overwrite_text">overwrite</string>
+    <string name="queue">CurrentPlaylist</string>
+    <string name="new_playlist">NewPlaylist</string>
+    <string name="add_to_playlist">Add To Playlist</string>
+    <string name="ringtone_menu">Use as phone ringtone</string>
+    <string name="ringtone_set">Ringtone has been set</string>
+    <string name="delete_song_desc">Permanently delete</string>
+    <string name="delete_song_desc_nosdcard">Permanently delete</string>
+    <string name="add_to_queue">Add To Queue</string>
+    <string name="play_next">Play Next</string>
+    <string name="remove_from_playlist">Remove</string>
+    <string name="play_this">Play</string>
+    <string name="delete_playlist">Delete Playlist</string>
+    <string name="rename_playlist">Rename Playlist</string>
+    <string name="changelistviewStyle">Change Theme</string>
+    <string name="shaketochange">Shake phone</string>
+    <string name="threshhold_frequency">Set Shake Threshold Frequency</string>
+
+
+    <string name="combine_two_strings" translatable="false">%1$s | %2$s</string>
+    <string name="duration_format" translatable="false"><xliff:g id="hours">%1$s</xliff:g> <xliff:g id="minutes">%2$s</xliff:g></string>
+    <string name="durationformatshort" translatable="false"><xliff:g id="format">%2$d:%3$02d</xliff:g></string>
+    <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%2$02d:%3$02d</xliff:g></string>
+
+    <string name="shaketogotonextsong">Shake for next song</string>
+    <string name="search_library">Search music library</string>
+    <string name="search">earch</string>
+    <string name="SHAKE">SHAKE</string>
+    <string name="ViewpagerTransformer">Scroll Effect</string>
+    <string name="transformer">ViewPager Transformer</string>
+    <string name="Changetransformer">Change ViewPager Transformer</string>
+    <string name="stripsview">Strips View</string>
+    <string name="strips">Put strips in ListViews</string>
+    <string name="playlist_renamed_message">Playlist Renamed</string>
+    <string name="enabled">Enabled</string>
+    <string name="bass_boost">Bass Boost</string>
+    <string name="flat">Flat</string>
+    <string name="songsbeingplayed">Songs are being played</string>
+    <string name="songshuffledplayed">Songs are shuffled and Being played</string>
+    <string name="songsaddedtothequeue">Songs added to the queue</string>
+    <string name="playit">Play</string>
+    <string name="settings">Settings</string>
+    <string name="create_playlist_create_text_prompt" msgid="2379436619128383935">"Open the keyboard to give your new Playlist a name or select Save to name it \"<xliff:g id="PLAYLIST">%s</xliff:g>\"."</string>
+    <string name="rename_playlist_same_prompt" msgid="7777541452078260899">"Open the keyboard to give playlist \"<xliff:g id="PLAYLIST">%s</xliff:g>\" a new name."</string>
+    <string name="rename_playlist_diff_prompt" msgid="900422624897120958">"Open the keyboard to give playlist \"<xliff:g id="PLAYLIST">%1$s</xliff:g>\" a new name or select Save to name it \"<xliff:g id="NAME">%2$s</xliff:g>\"."</string>
+    <string name="playlist_deleted_message">Playlist Deleted</string>
+    <string name="Auto_playlist_deleted_message">Auto playlist can\'t be deleted</string>
+    <string name="playlistcant_rename_message">Auto playlist can\'t be renamed</string>
+    <string name="default_time">00:00</string>
+    <string name="setTimerMsg">Sleep timer set</string>
+    <string name="overTimerMsg">Song paused by sleep timer</string>
+    <string name="editweek">Edit Weeks</string>
+    <string name="changefont">Change font that suits you</string>
+    <string name="fulscreen">Full Screen</string>
+    <string name="fulscreendesc">Apply full screen window</string>
+    <string name="scrollEffect">Choose scrolling style</string>
+    <string name="about">About</string>
+    <string name="beatsplayer">Music Player</string>
+    <string name="version">Version 3.3.7</string>
+    <string name="developer">Developed by: Reyansh Mishra</string>
+    <string name="rateus">Please rate us 5 stars</string>
+    <string name="legal">Legal</string>
+    <string name="share_item">Share</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="sort">Sort</string>
+    <string name="displaysongs">Display songs added in last</string>
+    <string name="setimer">Set timer</string>
+    <string name="abrepeat">A-B Repeat</string>
+    <string name="gotooption">Go to</string>
+    <string name="eq_reset">Equalizer reset</string>
+    <string name="Album">Album</string>
+    <string name="artist">Artist</string>
+    <string name="genres">Gerne</string>
+    <string name="abrepeatmessage">Drag the srubbers to select the part of \n song you would like to repeat.</string>
+    <string name="beta">I AM IN BETA!!</string>
+    <string name="heartbeats">WHERE YOUR HEART BEATS</string>
+    <string name="createplaylist">Create playlist</string>
+    <string name="mediaplayerfailed">Song failed to load</string>
+    <string name="unable_to_get_audio_focus">Unable to get audio focus</string>
+    <string name="restartapp">Please restart the app to apply the settings</string>
+    <string name="songtitle">Song Title</string>
+    <string name="duration">Duration</string>
+    <string name="dateadded">Date Added</string>
+    <string name="year">Year</string>
+    <string name="therhythmplayer">The Rhythm Player</string>
+    <string name="decemberreaper">December Reaper</string>
+    <string name="almity">Alighty Nesia</string>
+    <string name="julius">Julius-Sans-One</string>
+    <string name="scrollview">Select Scroll View</string>
+    <string name="defaulttrans">Default Transformer</string>
+    <string name="accordiontrans">Accordion Transformer</string>
+    <string name="rotatedowntrans">Rotate Down Transformer</string>
+    <string name="rotateuptrans">Rotate Up Transformer</string>
+    <string name="scaleinouttrans">Scale In Out Transformer</string>
+    <string name="stacktrans">Stack Transformer</string>
+    <string name="tablettrans">Tablet Transformer</string>
+    <string name="zommouttrans">Zoom Out Slide Transformer</string>
+    <string name="done">Done</string>
+    <string name="playlist_renamed">Removed</string>
+    <string name="rename_playlist_info">Rename</string>
+    <string name="playlist_name">name</string>
+    <string name="ascending">ASCENDING</string>
+    <string name="descending">DESCENDING</string>
+    <string name="ignoretheanda">Ignore \"THE/A\" while sorting</string>
+    <string name="artisttitle">Artist Title</string>
+    <string name="artistalbum">Artist Album</string>
+    <string name="artistyear">Artist Year</string>
+    <string name="fonts">Fonts</string>
+    <string name="entername">Enter Name</string>
+    <string name="feelthemusice">Get lost in the Muzik</string>
+    <string name="whatsnew">What\'s New?</string>
+    <string name="wversion">Version 3.0d</string>
+    <string name="date">May 7,2016</string>
+    <string name="info1">* Added button to navigate to now playing.</string>
+    <string name="info2">* Added Favorites option</string>
+    <string name="artwork">Lock Screen ArtWork</string>
+    <string name="putblurredlocksreen">Put Blurred Lock Screen</string>
+    <string name="later">Later</string>
+    <string name="areyou">Are you enjoing this player please give us 5 stars !!!</string>
+    <string name="info3">* Minor bugs fixes!!</string>
+    <string name="Virtualiser">Virtualiser</string>
+    <string name="BassBoost">Bass Boost</string>
+    <string name="e125Hz">12.5KHz</string>
+    <string name="e5kHz">5kHz</string>
+    <string name="e2kHz">2kHz</string>
+    <string name="e800Hz">800Hz</string>
+    <string name="e320Hz">320Hz</string>
+    <string name="e130Hz">130Hz</string>
+    <string name="e50Hz">50Hz</string>
+    <string name="Equalizer">Equalizer</string>
+    <string name="RESET">RESET</string>
+    <string name="background">App background</string>
+    <string name="backgroundd">Put your own image as background</string>
+    <string name="RateApp">Please rate us!!</string>
+    <string name="ratenow">Rate Now</string>
+    <string name="rateuse">If you enjoy using Muzik Player, please take a moment to rate it. Thanks for your support!</string>
+    <string name="remindmelater">Later</string>
+    <string name="nothanks">No, thanks</string>
+    <string name="clearfavorites">Unavorites all songs</string>
+    <string name="favoritescleared">All songs removed !</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="unfavorite">Are you sure ?</string>
+    <string name="unfavorite_long">All songs added to the favorite list will be deleted?</string>
+    <string name="cleartoptracks">Clear top track list</string>
+    <string name="cleartoptracks_long">All songs from toptrack list will  be cleared!</string>
+    <string name="clearrecentlyplayed">Clear recently played</string>
+    <string name="recentlyplayedcleared">Recently played cleared!\\</string>
+    <string name="timer_is_on">Timer is on</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="stop">Stop</string>
+    <string name="changebg">Change Background</string>
+    <string name="putyourbg">Put your own background.</string>
+    <string name="savePreset">SAVE</string>
+    <string name="preset_saved">Preset saved !</string>
+    <string name="folder_list_item_type">folder_list_item_type</string>
+    <string name="folder_path">folder_path</string>
+    <string name="position">position</string>
+    <string name="cantplay">Sorry cant play this audio!</string>
+    <string name="folder_deleted">File deleted!</string>
+    <string name="file_deleted">File Deleted!</string>
+    <string name="folder_could_not_be_deleted">Folder can not be deleted!!</string>
+    <string name="file_could_not_be_deleted">File cant not be deleted!</string>
+    <string name="enter_preset_name">Please enter preset name!</string>
+    <string name="key_internal_uri_extsdcard">storeExternalUri</string>
+    <string name="sd_access">You need to grant SD card access to Rhythm Player to modifty contents on external SD card.\n</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="repeat_song_instruction">Drag the scrubbers to select the part of the song you would like to repeat.</string>
+    <string name="autoplaylist">Auto Playlist</string>
+    <string name="recentlyadded">Recently Added</string>
+    <string name="favorites">Favorites</string>
+    <string name="topplayed">Top Played</string>
+    <string name="recently_played">Recently Played</string>
+
+    <string name="banner_home_footer">ca-app-pub-2917164234203652/5982530526</string>
+    <string name="banner_home_footer_1">ca-app-pub-2917164234203652/1616160121</string>
+    <string name="banner_home_footer_2">ca-app-pub-2917164234203652/9484713720</string>
+    <string name="interstitial_full_screen">ca-app-pub-2917164234203652/7828230121</string>
+
+    <string name="count_song"><xliff:g id="count">%d</xliff:g> song</string>
+    <string name="count_songs"><xliff:g id="count">%d</xliff:g> songs</string>
+    <string name="count_album"><xliff:g id="count">%d</xliff:g> album</string>
+    <string name="count_albums"><xliff:g id="count">%d</xliff:g> albums</string>
+    <string name="count_artist"><xliff:g id="count">%d</xliff:g> artist</string>
+    <string name="count_artists"><xliff:g id="count">%d</xliff:g> artists</string>
+
+    <string name="play">Play</string>
+    <string name="pause_on_disconnect">Pause on Disconnect</string>
+    <string name="pause_desc">Pauses playback when headset is disconnected</string>
+    <string name="resume_on_disconnect">Resume on Connect</string>
+    <string name="play_desc">Resumes playback when headset is connected</string>
+    <string name="action_search">Search</string>
+    <string name="options">Options</string>
+</resources>

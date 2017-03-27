@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentlinear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_bg"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/transparent_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/background_toolbar_translucent"
+        android:elevation="5dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/Equalizer"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_x_large" />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:visibility="gone">
+
+        <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/Equalizer"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@+id/linearLayout8"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:id="@+id/e50hztxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+                <com.reyansh.audio.audioplayer.free.Views.VerticalSeekBar
+                    android:id="@+id/slider_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:max="31"
+                    android:progress="16"
+                    android:progressBackgroundTint="@color/gray"
+                    android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:thumbOffset="8dp" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/e50Hz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:id="@+id/e130hztxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+                <com.reyansh.audio.audioplayer.free.Views.VerticalSeekBar
+                    android:id="@+id/slider_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:max="31"
+                    android:progress="16"
+                    android:progressBackgroundTint="@color/gray"
+                    android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:thumbOffset="8dp" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/e130Hz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:id="@+id/e320hztxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+                <com.reyansh.audio.audioplayer.free.Views.VerticalSeekBar
+                    android:id="@+id/slider_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:max="31"
+                    android:progress="16"
+                    android:progressBackgroundTint="@color/gray"
+                    android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:thumbOffset="8dp" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/e320Hz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:id="@+id/e800hztxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+                <com.reyansh.audio.audioplayer.free.Views.VerticalSeekBar
+                    android:id="@+id/slider_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:max="31"
+                    android:progress="16"
+                    android:progressBackgroundTint="@color/gray"
+                    android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:thumbOffset="8dp" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/e800Hz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:id="@+id/e2khztxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+                <com.reyansh.audio.audioplayer.free.Views.VerticalSeekBar
+                    android:id="@+id/slider_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:max="31"
+                    android:progress="16"
+                    android:progressBackgroundTint="@color/gray"
+                    android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:thumbOffset="8dp" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/e2kHz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:id="@+id/e5khztxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+                <com.reyansh.audio.audioplayer.free.Views.VerticalSeekBar
+                    android:id="@+id/slider_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:max="31"
+                    android:progress="16"
+                    android:progressBackgroundTint="@color/gray"
+                    android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:thumbOffset="8dp" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/e5kHz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:id="@+id/e12_5khztxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent"
+
+                    />
+
+                <com.reyansh.audio.audioplayer.free.Views.VerticalSeekBar
+                    android:id="@+id/slider_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:max="31"
+                    android:progress="16"
+                    android:progressBackgroundTint="@color/gray"
+                    android:progressDrawable="@drawable/apptheme_scrubber_progress_horizontal_holo_light"
+                    android:thumb="@drawable/seekbarthumb"
+                    android:thumbOffset="8dp" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="@string/e125Hz"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/white"
+                    tools:ignore="UselessParent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <com.triggertrap.seekarc.SeekArc
+                    android:id="@+id/virtulizer"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:progressBackgroundTint="@color/gray"
+                    app:arcColor="@color/transparent_bg"
+                    app:arcWidth="8dp"
+                    app:max="1000"
+                    app:progressColor="@color/white"
+                    app:progressWidth="7dp"
+                    app:rotation="225"
+                    app:startAngle="0"
+                    app:sweepAngle="270"
+                    app:thumb="@color/white" />
+
+                <TextView
+                    android:id="@+id/virtualizervalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/virtulizer"
+                    android:layout_alignStart="@+id/virtulizer"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="0%"
+                    android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+                    android:textColor="@color/white" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/virtulizer"
+                    android:layout_alignStart="@+id/virtulizer"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:text="@string/Virtualiser"
+                    android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp">
+
+
+                <com.triggertrap.seekarc.SeekArc
+                    android:id="@+id/bass_boost"
+                    android:layout_width="150dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:progressBackgroundTint="@color/gray"
+                    app:arcColor="@color/transparent_bg"
+                    app:arcWidth="8dp"
+                    app:max="1000"
+                    app:progressColor="@color/white"
+                    app:progressWidth="7dp"
+                    app:rotation="225"
+                    app:startAngle="0"
+                    app:sweepAngle="270"
+                    app:thumb="@color/white" />
+
+                <TextView
+                    android:id="@+id/bass_boostvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/bass_boost"
+                    android:layout_alignStart="@+id/bass_boost"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="0%"
+
+                    android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+                    android:textColor="@color/white" />
+
+                <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/bass_boost"
+                    android:layout_alignStart="@+id/bass_boost"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:gravity="center"
+                    android:text="@string/BassBoost"
+                    android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/savePreset"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/settingselector"
+                    android:gravity="center"
+                    android:text="@string/savePreset"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Spinner
+                    android:id="@+id/reverb_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/settingselector"
+                    android:popupBackground="@color/transparent_bg_dark"></Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/resetAllButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/settingselector"
+                    android:text="@string/RESET"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

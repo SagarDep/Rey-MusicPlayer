@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sortlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/drawable_dialog_bg"
+    android:orientation="vertical"
+    android:padding="4dp">
+    <LinearLayout
+        android:id="@+id/dailogbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable_dialog_bg"
+        android:orientation="vertical">
+
+        <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:singleLine="true"
+            android:text="Grant access !!"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/sd_access"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="To grant access :"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- Click the 3-dots menu icon on the\n following dialog and select 'Show SD card' \n"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- Tap the navigation icon on the left then\n select desired storage device you want to \n grant access to , typically 'SD Card'.\n"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="- Tap 'Select' button at the bottom.\n"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="(Make sure you choose Root directory of \n the storage)\n"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+            <com.reyansh.audio.audioplayer.free.Views.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Do you want to grant SD card access to Rhythm Player ?\n"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/ascending"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/settingselector"
+                    android:text="@string/yes"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null">
+
+                <Button
+                    android:id="@+id/descending"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/settingselector"
+                    android:text="@string/no"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
