@@ -1,5 +1,4 @@
 # Rey-MusicPlayer
-******************************
 <H1>APP FEATURES</H1>
 
 The awesome Music Player includes a lot of features some of them are mentioned below.
