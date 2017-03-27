@@ -1,7 +1,4 @@
 # Rey-MusicPlayer
-<b>Rey-MusicPlayer</b>
-
-
 ******************************
 <H1>APP FEATURES</H1>
 
