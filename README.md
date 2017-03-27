@@ -23,7 +23,6 @@ The awesome Music Player includes a lot of features some of them are mentioned b
 
 
 <H1>Screenshots</H1>
-******************************
 <br>
 
 ![Alt text](https://github.com/reyanshmishra/Rey-MusicPlayer/blob/master/Screenshots/screenshotsmain.jpg?raw=true "Optional Title")
